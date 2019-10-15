@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" type="text/css" href="mystyle.css">
+<link href="css/bootstrap.css" rel="stylesheet" />
+<link href="css/bootstrap-theme.css" rel="stylesheet" />
+<script src="jquery.js"></script>
+<script src="script.js"></script>
+<title>Raport z podróży</title>
+</head>
+<body id=tlo >
+<nav>
+  <input type="button" class="float-right btn btn-success" id="plustext" value="Zwiększ"  onclick="zwieksz(1)">
+  <input type="button" class="float-right btn btn-danger" id="minustext" value="Zmniejsz"  onclick="zmniejsz(-1)">
+  <input type="button" class="float-left btn btn-success" id="styl_podrozniczy" value="Styl podróżniczy" onclick="styl_podrozniczy()">
+  <input type="button" class="float-left btn btn-warning" id="styl_wakacyjny" value="Styl wakacyjny"  onclick="styl_wakacyjny()">
+  
+</nav>
+<br><br>
+<p id="tytul" class="text-center py-5 text-center">Pamiętnik z wakacji <br><span id="tytul2">Zapisz swoje podróże!</span></p>
+
+<div id=container>
+<br>
+<br>
+<form id="podroz" class="table-responsive" autocomplete="off">
+<input class="main" type="text" id="myInput" name="nazwa" placeholder="Wpisz nazwę miejsca" .form-control>
+<button type="button" id="btn" onclick="pokaz()">Submit</button>
+<br><br>
+<div id="tekst"></div>
+<select id="selecto" class="forma" hidden onchange="tekst()" >
+
+</select>
+  <br><br>
+  <textarea id="tekstId" rows="4" cols="30" disabled oninput="data_wlacz()"></textarea>
+    <br><br>
+    <input type="date" id="data" disabled onchange="data_validation()" >
+  <input type="submit" id="dodaj" value="Dodaj" onclick="onSubmit()" disabled>
+</form>
+  <br>
+<br>
+<div id="div_tabela" class="fixed table-responsive">
+<table border="1" align="center" id="tabela" class="table-fixed table">
+    <tr class="table-info">
+      <thead class="table-warning" >
+      <th id="komorka1">Widoczek</th>
+      <th id="komorka2">Nazwa</th>
+      <th id="komorka3">Info</th>
+      <th id="komorka4">Komentarz</th>
+      <th id="komorka5">Data</th>
+      <th>Usuń</th>
+  </thead>
+</tr>
+</table>
+</div>
+<div id="miejsce"></div>
+
+</div>
+<script src="js/bootstrap.min.js"></script>
+</body>
+</html>

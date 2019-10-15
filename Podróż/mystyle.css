@@ -1,0 +1,70 @@
+table {
+    border-style:solid;
+    text-align:center;
+    vertical-align: middle;
+}
+
+#tytul { 
+    color: #ffd102; 
+    background-image: url("wakacje.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-size: 6em;
+    font-family: Impact;
+    text-align: center;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  }
+
+#tabela td {
+    background-color: white;
+    text-align:center;
+    vertical-align: middle;
+    word-break: normal;
+}
+#podroz {
+    text-align: center;
+} 
+#div_tabela {
+    display: flex;
+    align-items: center;
+}
+#tytul #tytul2 {
+    font-size: 0.5em;
+    color: #ffd102;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+#form_tytul  {
+    font-size: 2em;
+    color: #ffd102; 
+    text-shadow:-0.5px 0 black, 0 0.5px black, 0.5px 0 black, 0 -0.5    px black;
+  
+}
+#div_center {
+    text-align: center;
+}
+#tabela {
+    width:100%;
+}
+#komorka1 {
+    text-align:center;
+    vertical-align: middle;
+    width:20%;
+}
+#komorka2 {
+    width: 10%;
+}
+#komorka3 {
+    width:40%;
+}
+#komorka5 {
+    width:10%;
+}
+#zdj1, #zdj2, #zdj3, #zdj4, #zdj5 {
+    display: block;
+    width:100%;
+    height:auto;
+}
+#tlo {
+    background-color: rgb(61, 184, 255);
+}
